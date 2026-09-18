@@ -1,0 +1,79 @@
+/* GreenकBadi design tokens — RN-ready · ref: Clean | Simple | Professional */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  /* Brand — Primary Green #16A34A · Secondary Blue #2563EB */
+  --gk-green-900: #14532d;
+  --gk-green-800: #166534;
+  --gk-green-700: #15803d;
+  --gk-green-600: #16a34a;
+  --gk-green-500: #22c55e;
+  --gk-green-100: #dcfce7;
+  --gk-green-50: #f0fdf4;
+
+  --gk-blue-700: #1d4ed8;
+  --gk-blue-600: #2563eb;
+  --gk-blue-100: #dbeafe;
+  --gk-blue-50: #eff6ff;
+
+  --gk-white: #ffffff;
+  --gk-bg: #f8faf9;
+  --gk-text: #111827;
+  --gk-muted: #6b7280;
+  --gk-border: #e5e7eb;
+  --gk-danger: #dc2626;
+  --gk-warning: #d97706;
+
+  /* Status badges (reference) */
+  --gk-status-waiting-bg: #fff7ed;
+  --gk-status-waiting: #ea580c;
+  --gk-status-assigned-bg: #eff6ff;
+  --gk-status-assigned: #2563eb;
+  --gk-status-enroute-bg: #e0f2fe;
+  --gk-status-enroute: #0284c7;
+  --gk-status-done-bg: #dcfce7;
+  --gk-status-done: #16a34a;
+  --gk-status-active-bg: #ccfbf1;
+  --gk-status-active: #0d9488;
+  --gk-status-cancel-bg: #f3f4f6;
+  --gk-status-cancel: #6b7280;
+
+  /* Type */
+  --gk-font: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  /* Radius / shadow */
+  --gk-radius-sm: 10px;
+  --gk-radius: 14px;
+  --gk-radius-lg: 18px;
+  --gk-shadow: 0 4px 16px rgba(20, 83, 45, 0.06);
+  --gk-shadow-md: 0 8px 28px rgba(20, 83, 45, 0.1);
+  --gk-shadow-hover: 0 12px 32px rgba(22, 163, 74, 0.14);
+  --gk-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --gk-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Spacing (8pt) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --touch: 44px;
+}
+
+@keyframes gk-fade-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--gk-font);
+  color: var(--gk-text);
+  background: #e8eee9;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+button, input, select, textarea { font-family: inherit; }
