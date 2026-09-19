@@ -28,7 +28,12 @@ export function Head() {
             { name: 'Home', path: '/' },
             { name: 'Terms & Conditions', path: '/terms' },
           ])
-        : null
+        : urlPathname === '/delete-account'
+          ? breadcrumbJsonLd([
+              { name: 'Home', path: '/' },
+              { name: 'Delete Account', path: '/delete-account' },
+            ])
+          : null
 
   return (
     <>

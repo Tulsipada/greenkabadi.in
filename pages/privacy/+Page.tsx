@@ -148,8 +148,9 @@ export function Page() {
         <ul>
           <li>Update profile, addresses and language in the app</li>
           <li>
-            Request access, correction or deletion of your account from Profile
-            settings or by emailing{' '}
+            Request access or correction in the app, or{' '}
+            <a href="/delete-account">delete your account</a> from the app or
+            this website, or email{' '}
             <a href="mailto:hello@greenkabadi.in">hello@greenkabadi.in</a>
           </li>
           <li>Opt out of non-essential notifications in device settings</li>

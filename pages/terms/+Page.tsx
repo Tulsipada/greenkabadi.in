@@ -129,7 +129,8 @@ export function Page() {
 
         <h2>10. Termination · समाप्ति</h2>
         <p>
-          You may stop using the app and request account deletion at any time.
+          You may stop using the app and{' '}
+          <a href="/delete-account">request account deletion</a> at any time.
           We may suspend or end access if you breach these Terms. Provisions on
           liability, intellectual property and disputes survive termination.
         </p>

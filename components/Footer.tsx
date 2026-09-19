@@ -7,6 +7,7 @@ export function Footer() {
   const { urlPathname } = usePageContext()
   const onPrivacy = urlPathname === '/privacy'
   const onTerms = urlPathname === '/terms'
+  const onDelete = urlPathname === '/delete-account'
 
   return (
     <footer className="site-footer">
@@ -65,6 +66,7 @@ export function Footer() {
           <div className="footer-legal">
             {!onPrivacy ? <a href="/privacy">{t('foot.privacy')}</a> : null}
             {!onTerms ? <a href="/terms">{t('foot.terms')}</a> : null}
+            {!onDelete ? <a href="/delete-account">{t('foot.delete')}</a> : null}
           </div>
         </div>
       </div>

@@ -9,6 +9,7 @@ Marketing website matching the HTML mockup, built with **Vike** (Vite SSR) + Rea
 | `/` | Landing (hero, how it works, materials, rates, business, app, FAQ, contact) |
 | `/privacy` | Privacy Policy (Google Play / app store URL) |
 | `/terms` | Terms & Conditions (Google Play / app store URL) |
+| `/delete-account` | Account deletion instructions + web request (Play Store) |
 
 Languages: English · हिन्दी · বাংলা · नेपाली (same keys as mockup).
 

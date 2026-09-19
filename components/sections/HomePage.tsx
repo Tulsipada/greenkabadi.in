@@ -47,9 +47,6 @@ export function HomePage() {
 
   return (
     <main id="top">
-      <a className="skip-link" href="#home">
-        Skip to content
-      </a>
       <section className="hero" id="home">
         <div className="hero-bg" aria-hidden="true" />
         <div className="container hero-grid">
@@ -386,6 +383,8 @@ export function HomePage() {
             <a href="/privacy">{t('sec.privacy')}</a>
             {' · '}
             <a href="/terms">{t('sec.terms')}</a>
+            {' · '}
+            <a href="/delete-account">{t('sec.delete')}</a>
           </p>
         </div>
       </section>
