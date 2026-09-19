@@ -179,15 +179,17 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .lang-select select {
   appearance: none;
   -webkit-appearance: none;
-  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%230f3d2e' d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E") no-repeat right 10px center;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%230f3d2e' d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E") no-repeat right 8px center;
   border: 1px solid var(--lp-line);
   border-radius: 999px;
-  padding: 8px 28px 8px 12px;
+  padding: 8px 26px 8px 10px;
   font-size: 12px;
   font-weight: 700;
+  letter-spacing: 0.04em;
   color: var(--lp-forest);
   cursor: pointer;
-  min-width: 100px;
+  min-width: 0;
+  width: 64px;
 }
 .lang-select select:focus {
   outline: 2px solid var(--gk-green-600);
@@ -1380,8 +1382,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
     height: 40px;
   }
   .lang-select select {
-    min-width: 0;
-    width: 72px;
+    width: 58px;
     padding: 8px 22px 8px 8px;
     font-size: 11px;
   }

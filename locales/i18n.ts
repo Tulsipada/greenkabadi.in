@@ -903,8 +903,8 @@ export function t(lang: Lang, key: string): string {
 }
 
 export const LANG_OPTIONS: { value: Lang; label: string }[] = [
-  { value: 'en', label: 'English' },
-  { value: 'hi', label: 'हिन्दी' },
-  { value: 'bn', label: 'বাংলা' },
-  { value: 'ne', label: 'नेपाली' },
+  { value: 'en', label: 'EN' },
+  { value: 'hi', label: 'HI' },
+  { value: 'bn', label: 'BN' },
+  { value: 'ne', label: 'NE' },
 ];
