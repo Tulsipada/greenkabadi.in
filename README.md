@@ -1,4 +1,4 @@
-# GreenकBadi Frontend (React + Vite SSR)
+# GreenकBadi Website (React + Vite SSR)
 
 Marketing website matching the HTML mockup, built with **Vike** (Vite SSR) + React.
 
@@ -15,7 +15,7 @@ Languages: English · हिन्दी · বাংলা · नेपाल�
 ## Develop
 
 ```sh
-cd greenkabadi_frontend
+cd greenkabadi_website
 npm install
 npm run dev
 ```
@@ -36,4 +36,4 @@ npm run preview
 - TypeScript
 - Mockup CSS (`public/styles/website.css`) + brand tokens
 
-Hero/material photos live in `public/img/` (not `/assets/` — that path conflicts with Vite’s JS bundles).
+Hero/material photos live in `public/img/` (not `/assets/` - that path conflicts with Vite’s JS bundles).

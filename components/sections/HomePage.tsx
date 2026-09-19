@@ -16,28 +16,28 @@ const MATERIALS = [
     title: 'mat.metal.title',
     list: 'mat.metal.list',
     src: '/img/website/metal.jpg',
-    alt: 'Scrap metal — copper, iron, aluminium, steel',
+    alt: 'Scrap metal - copper, iron, aluminium, steel',
   },
   {
     key: 'elec',
     title: 'mat.elec.title',
     list: 'mat.elec.list',
     src: '/img/website/electronics.jpg',
-    alt: 'E-waste — fridges, TVs, laptops',
+    alt: 'E-waste - fridges, TVs, laptops',
   },
   {
     key: 'paper',
     title: 'mat.paper.title',
     list: 'mat.paper.list',
     src: '/img/website/paper.jpg',
-    alt: 'Paper scrap — newspaper, carton, books',
+    alt: 'Paper scrap - newspaper, carton, books',
   },
   {
     key: 'plastic',
     title: 'mat.plastic.title',
     list: 'mat.plastic.list',
     src: '/img/website/plastic.jpg',
-    alt: 'Plastic scrap — PET, HDPE, mixed',
+    alt: 'Plastic scrap - PET, HDPE, mixed',
   },
 ]
 
@@ -99,7 +99,7 @@ export function HomePage() {
             <figure className="hero-photo">
               <img
                 src="/img/website/hero.jpg"
-                alt="GreenकBadi doorstep scrap pickup — recycle today, better tomorrow"
+                alt="GreenकBadi doorstep scrap pickup - recycle today, better tomorrow"
                 width={1200}
                 height={800}
               />

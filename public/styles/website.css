@@ -1,4 +1,4 @@
-/* GreenकBadi marketing website — concept landing */
+/* GreenकBadi marketing website - concept landing */
 @import url("./tokens.css");
 
 :root {
@@ -60,7 +60,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   border: 0;
 }
 
-/* —— Reveal motion —— */
+/* -- Reveal motion -- */
 .reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -74,7 +74,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .reveal.delay-2 { transition-delay: 0.2s; }
 .reveal.delay-3 { transition-delay: 0.3s; }
 
-/* —— Header —— */
+/* -- Header -- */
 .site-header {
   position: sticky;
   top: 0;
@@ -206,7 +206,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   font-size: 18px;
 }
 
-/* —— Buttons —— */
+/* -- Buttons -- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -259,7 +259,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .text-link:hover { color: var(--lp-forest); }
 
-/* —— Hero —— */
+/* -- Hero -- */
 .hero {
   position: relative;
   padding: 48px 0 56px;
@@ -408,7 +408,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   to { opacity: 1; transform: none; }
 }
 
-/* —— Impact —— */
+/* -- Impact -- */
 .impact {
   margin-top: -28px;
   position: relative;
@@ -456,7 +456,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   line-height: 1.3;
 }
 
-/* —— Sections —— */
+/* -- Sections -- */
 .section { padding: 80px 0; }
 .section.alt { background: linear-gradient(180deg, #f7fbf8 0%, #fff 100%); }
 
@@ -488,7 +488,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   line-height: 1.55;
 }
 
-/* —— How —— */
+/* -- How -- */
 .how-steps {
   display: flex;
   align-items: flex-start;
@@ -543,7 +543,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   padding-top: 18px;
 }
 
-/* —— Materials —— */
+/* -- Materials -- */
 .mat-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -587,7 +587,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   line-height: 1.45;
 }
 
-/* —— Rates + Why —— */
+/* -- Rates + Why -- */
 .rates-why-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -673,7 +673,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   line-height: 1.45;
 }
 
-/* —— Business —— */
+/* -- Business -- */
 .business {
   position: relative;
   padding: 0;
@@ -755,7 +755,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   background: var(--lp-mint);
 }
 
-/* —— App promo —— */
+/* -- App promo -- */
 .app-promo {
   background:
     radial-gradient(ellipse 50% 60% at 90% 40%, rgba(22, 163, 74, 0.12), transparent 60%),
@@ -908,7 +908,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .mini-card strong { display: block; margin: 4px 0; font-size: 14px; }
 .mini-card p { margin: 0; font-size: 11px; color: var(--lp-soft); }
 
-/* —— FAQ —— */
+/* -- FAQ -- */
 .faq-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -950,7 +950,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: var(--gk-green-600);
   flex-shrink: 0;
 }
-.faq-item[open] summary::after { content: "−"; }
+.faq-item[open] summary::after { content: "-"; }
 .faq-item p {
   margin: 0 0 16px;
   font-size: 14px;
@@ -958,7 +958,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: var(--lp-soft);
 }
 
-/* —— Contact —— */
+/* -- Contact -- */
 .contact { padding-top: 40px; }
 .contact-inner { text-align: center; max-width: 800px; }
 .contact-row {
@@ -999,7 +999,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   font-weight: 700;
 }
 
-/* —— Footer —— */
+/* -- Footer -- */
 .site-footer {
   background: var(--lp-forest-deep);
   color: rgba(255, 255, 255, 0.85);
@@ -1055,7 +1055,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: rgba(255, 255, 255, 0.55);
 }
 
-/* —— Responsive —— */
+/* -- Responsive -- */
 @media (max-width: 1024px) {
   .site-header {
     /* full-bleed menu anchors to header, not the narrow .container */

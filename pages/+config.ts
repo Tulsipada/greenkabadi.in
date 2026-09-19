@@ -6,7 +6,7 @@ export default {
   extends: [vikeReact],
   Layout,
   prerender: true,
-  title: 'GreenकBadi — Scrap pickup at your door',
+  title: 'GreenकBadi - Scrap pickup at your door',
   description:
     'Doorstep scrap pickup in Siliguri. Fair rates, verified weight, digital receipts.',
   lang: 'en',
