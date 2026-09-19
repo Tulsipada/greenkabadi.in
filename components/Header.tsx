@@ -24,7 +24,7 @@ export function Header({ compact }: { compact?: boolean }) {
               <span className="b">Badi</span>
             </span>
             {!compact && (
-              <span className="brand-tag">Your Scrap. Our Responsibility.</span>
+              <span className="brand-tag">Recycle Today. Better Tomorrow.</span>
             )}
           </span>
         </a>
