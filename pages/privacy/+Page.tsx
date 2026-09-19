@@ -175,12 +175,6 @@ export function Page() {
           Or use the{' '}
           <a href="/#contact">website contact form</a>.
         </p>
-
-        <p className="legal-nav">
-          <a href="/terms">Terms &amp; Conditions</a>
-          <span aria-hidden="true"> · </span>
-          <a href="/">← Back to website</a>
-        </p>
       </div>
     </main>
   )

@@ -1,8 +1,13 @@
 import React from 'react'
+import { usePageContext } from 'vike-react/usePageContext'
 import { useI18n } from '../locales/I18nContext'
 
 export function Footer() {
   const { t } = useI18n()
+  const { urlPathname } = usePageContext()
+  const onPrivacy = urlPathname === '/privacy'
+  const onTerms = urlPathname === '/terms'
+
   return (
     <footer className="site-footer">
       <div className="container">
@@ -58,8 +63,8 @@ export function Footer() {
         <div className="footer-bottom">
           <span>{t('foot.copy')}</span>
           <div className="footer-legal">
-            <a href="/privacy">{t('foot.privacy')}</a>
-            <a href="/terms">{t('foot.terms')}</a>
+            {!onPrivacy ? <a href="/privacy">{t('foot.privacy')}</a> : null}
+            {!onTerms ? <a href="/terms">{t('foot.terms')}</a> : null}
           </div>
         </div>
       </div>

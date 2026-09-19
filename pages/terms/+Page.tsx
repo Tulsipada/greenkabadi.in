@@ -162,12 +162,6 @@ export function Page() {
           <br />
           <a href="/#contact">Website contact form</a>
         </p>
-
-        <p className="legal-nav">
-          <a href="/privacy">Privacy Policy</a>
-          <span aria-hidden="true"> · </span>
-          <a href="/">← Back to website</a>
-        </p>
       </div>
     </main>
   )
