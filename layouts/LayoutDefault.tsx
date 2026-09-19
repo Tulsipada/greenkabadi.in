@@ -23,7 +23,7 @@ export default function LayoutDefault({ children }: { children: React.ReactNode 
       </Head>
       <Header compact={compact} />
       {children}
-      {!compact && <Footer />}
+      <Footer />
     </I18nProvider>
   )
 }

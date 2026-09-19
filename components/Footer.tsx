@@ -57,7 +57,10 @@ export function Footer() {
         </div>
         <div className="footer-bottom">
           <span>{t('foot.copy')}</span>
-          <span>{t('foot.phase')}</span>
+          <div className="footer-legal">
+            <a href="/privacy">{t('foot.privacy')}</a>
+            <a href="/terms">{t('foot.terms')}</a>
+          </div>
         </div>
       </div>
     </footer>
