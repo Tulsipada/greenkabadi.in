@@ -327,13 +327,18 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   gap: 10px 16px;
   margin-bottom: 28px;
 }
-.hero-cats span {
+.hero-cats span,
+.hero-cats a {
   display: inline-flex;
   align-items: center;
   gap: 7px;
   font-size: 13px;
   font-weight: 700;
   color: var(--gk-green-800);
+  text-decoration: none;
+}
+.hero-cats a:hover {
+  color: var(--lp-forest);
 }
 .cat-ico {
   width: 28px;
@@ -488,6 +493,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   font-size: 16px;
   color: var(--lp-soft);
   line-height: 1.55;
+}
+.section-more {
+  margin: 28px 0 0;
+  text-align: center;
+  font-size: 14px;
 }
 
 /* -- How -- */
@@ -890,7 +900,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   gap: 8px;
   margin-bottom: 14px;
 }
-.mini-cats span {
+.mini-cats span,
+.mini-cats a {
   background: #fff;
   border: 1px solid var(--lp-line);
   border-radius: 10px;
@@ -899,6 +910,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   font-weight: 700;
   color: var(--gk-green-800);
   text-align: center;
+  text-decoration: none;
+}
+.mini-cats a:hover {
+  background: var(--lp-mint);
 }
 .mini-card {
   background: #fff;
@@ -1238,6 +1253,51 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   background: #991b1b;
 }
 
+/* Related internal links (legal pages) */
+.related-links {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid var(--lp-line);
+}
+.related-links-title {
+  margin: 0 0 12px !important;
+  font-size: 1.05rem !important;
+}
+.related-links-sub {
+  margin: 18px 0 10px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--lp-soft);
+}
+.related-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.related-links-list li {
+  margin: 0 !important;
+}
+.related-links-list a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--lp-line);
+  background: #f7fbf8;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--lp-forest) !important;
+  text-decoration: none !important;
+}
+.related-links-list a:hover {
+  background: var(--lp-mint);
+  border-color: rgba(15, 61, 46, 0.2);
+}
+
 @media (max-width: 640px) {
   .legal-card {
     padding: 24px 18px 32px;
@@ -1403,7 +1463,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
     gap: 8px 12px;
     margin-bottom: 20px;
   }
-  .hero-cats span { font-size: 12px; }
+  .hero-cats span,
+  .hero-cats a { font-size: 12px; }
   .hero-cta {
     flex-direction: column;
     align-items: stretch;

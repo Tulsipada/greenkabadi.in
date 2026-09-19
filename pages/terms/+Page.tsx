@@ -1,4 +1,5 @@
 import React from 'react'
+import { RelatedLinks } from '../../components/RelatedLinks'
 
 export function Page() {
   return (
@@ -10,20 +11,26 @@ export function Page() {
           These Terms &amp; Conditions (&quot;Terms&quot;) govern your use of the
           GreenकBadi customer mobile app (Android), staff app, admin tools and
           website. By installing, accessing or using GreenकBadi you agree to
-          these Terms. If you do not agree, do not use the service.
+          these Terms. If you do not agree, do not use the service. Read our{' '}
+          <a href="/privacy">Privacy Policy</a> for how we handle data.
         </p>
 
         <h2>1. About the service · सेवा</h2>
         <p>
           GreenकBadi connects customers who wish to sell scrap with authorised
-          collectors. We help you schedule pickups, assign collectors, record
-          weights and payments, and store digital receipts. We are a
-          marketplace/facilitator - final rates depend on item quality, verified
-          weight and market conditions at the time of pickup.
+          collectors. We help you{' '}
+          <a href="/#how">schedule pickups</a>, assign collectors, record
+          weights and payments, and store digital receipts. Indicative{' '}
+          <a href="/#rates">scrap rates</a> are shown on our website; final
+          rates depend on item quality, verified weight and market conditions at
+          the time of pickup. We collect{' '}
+          <a href="/#materials">metal, electronics, paper and plastic</a>.
         </p>
         <p>
-          Phase 1 service area is Siliguri and nearby areas as shown in the app.
-          Coverage may change over time.
+          Phase 1 service area is{' '}
+          <a href="/#contact">Siliguri and nearby areas</a> as shown in the app.
+          Coverage may change over time. Businesses can request{' '}
+          <a href="/#business">institutional pickups</a>.
         </p>
 
         <h2>2. Eligibility · पात्रता</h2>
@@ -163,6 +170,8 @@ export function Page() {
           <br />
           <a href="/#contact">Website contact form</a>
         </p>
+
+        <RelatedLinks currentPath="/terms" />
       </div>
     </main>
   )

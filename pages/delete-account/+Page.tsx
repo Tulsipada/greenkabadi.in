@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { RelatedLinks } from '../../components/RelatedLinks'
 
 export function Page() {
   const [name, setName] = useState('')
@@ -44,7 +45,9 @@ export function Page() {
         <p>
           Google Play and privacy rules require a clear way to delete your
           GreenकBadi account. You can delete from the app, or request deletion
-          from this page if you no longer have access to the app.
+          from this page if you no longer have access to the app. Full details
+          are in our <a href="/privacy">Privacy Policy</a> and{' '}
+          <a href="/terms">Terms &amp; Conditions</a>.
         </p>
 
         <div className="delete-warn" role="note">
@@ -175,6 +178,8 @@ export function Page() {
           <br />
           See also our <a href="/privacy">Privacy Policy</a>.
         </p>
+
+        <RelatedLinks currentPath="/delete-account" />
       </div>
     </main>
   )

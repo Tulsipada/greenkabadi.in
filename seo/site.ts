@@ -14,7 +14,10 @@ export const SITE = {
     'Sell scrap with doorstep pickup in Siliguri. Fair rates for metal, electronics, paper and plastic. Verified weight, digital receipt, cash or UPI.',
   keywords:
     'scrap pickup Siliguri, sell scrap, kabadi, e-waste collection, metal scrap rates, paper scrap, plastic recycling, GreenKabadi, doorstep scrap pickup',
-  ogImagePath: '/img/website/hero.jpg',
+  ogImagePath: '/img/og-default.jpg',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageType: 'image/jpeg',
   logoPath: '/img/logo-mark.png',
   address: {
     street: 'Milanmore, Maheshmari, Champasari',

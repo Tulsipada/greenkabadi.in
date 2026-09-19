@@ -31,7 +31,8 @@ export function Footer() {
             <a href="/#materials">{t('nav.materials')}</a>
             <a href="/#rates">{t('nav.rates')}</a>
             <a href="/#business">{t('nav.business')}</a>
-            <a href="/#about">{t('nav.about')}</a>
+            <a href="/#download">{t('nav.download')}</a>
+            <a href="/#faq">{t('nav.faq')}</a>
             <a href="/#contact">{t('nav.contact')}</a>
           </nav>
           <div className="social" aria-label="Social">

@@ -42,6 +42,7 @@ Hero/material photos live in `public/img/` (not `/assets/` - that path conflicts
 ## SEO
 
 - Meta title/description + Open Graph / Twitter (via Vike `title`, `description`, `image` + `pages/+Head.tsx`)
+- Social share image: `public/img/og-default.jpg` (1200×630) at `https://greenkabadi.in/img/og-default.jpg`
 - JSON-LD: LocalBusiness, WebSite, FAQPage (home), BreadcrumbList (legal pages)
 - `public/robots.txt` and `public/sitemap.xml` (domain: `greenkabadi.in`)
 - `public/site.webmanifest`

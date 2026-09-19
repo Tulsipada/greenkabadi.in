@@ -1,4 +1,5 @@
 import React from 'react'
+import { RelatedLinks } from '../../components/RelatedLinks'
 
 export function Page() {
   return (
@@ -11,8 +12,10 @@ export function Page() {
           mobile app (Android), staff app, admin tools and website
           (greenkabadi.in). This Privacy Policy explains what personal data we
           collect, how we use it, and your choices. It applies when you use our
-          apps or website to book scrap pickup, chat with collectors, or manage
-          your account.
+          apps or website to{' '}
+          <a href="/#download">book scrap pickup</a>, chat with collectors, or
+          manage your account. See also our{' '}
+          <a href="/terms">Terms &amp; Conditions</a>.
         </p>
         <p>
           By using GreenकBadi you agree to this policy. If you do not agree,
@@ -65,7 +68,10 @@ export function Page() {
         </ul>
 
         <h2>3. App permissions · ऐप अनुमतियाँ</h2>
-        <p>The Android customer app may request:</p>
+        <p>
+          The Android customer app (see{' '}
+          <a href="/#download">Download the app</a>) may request:
+        </p>
         <ul>
           <li>
             <strong>Location</strong> - to set pickup address and help collectors
@@ -176,6 +182,8 @@ export function Page() {
           Or use the{' '}
           <a href="/#contact">website contact form</a>.
         </p>
+
+        <RelatedLinks currentPath="/privacy" />
       </div>
     </main>
   )

@@ -63,18 +63,18 @@ export function HomePage() {
             <h1>{t('hero.title')}</h1>
             <p className="lead">{t('hero.lead')}</p>
             <div className="hero-cats" aria-label="Materials">
-              <span>
+              <a href="#materials">
                 <i className="cat-ico metal" /> Metal
-              </span>
-              <span>
+              </a>
+              <a href="#materials">
                 <i className="cat-ico elec" /> Electronics
-              </span>
-              <span>
+              </a>
+              <a href="#materials">
                 <i className="cat-ico paper" /> Paper
-              </span>
-              <span>
+              </a>
+              <a href="#materials">
                 <i className="cat-ico plastic" /> Plastic
-              </span>
+              </a>
             </div>
             <div className="hero-cta">
               <a className="btn btn-primary" href="#download">
@@ -164,6 +164,15 @@ export function HomePage() {
               </React.Fragment>
             ))}
           </ol>
+          <p className="section-more reveal">
+            <a className="text-link" href="#download">
+              {t('how.toApp')}
+            </a>
+            {' · '}
+            <a className="text-link" href="#faq">
+              {t('how.toFaq')}
+            </a>
+          </p>
         </div>
       </section>
 
@@ -196,6 +205,15 @@ export function HomePage() {
               </article>
             ))}
           </div>
+          <p className="section-more reveal">
+            <a className="text-link" href="#rates">
+              {t('mat.toRates')}
+            </a>
+            {' · '}
+            <a className="text-link" href="#download">
+              {t('mat.toBook')}
+            </a>
+          </p>
         </div>
       </section>
 
@@ -217,6 +235,10 @@ export function HomePage() {
             </ul>
             <a className="text-link" href="#download">
               {t('rates.viewAll')}
+            </a>
+            {' · '}
+            <a className="text-link" href="#materials">
+              {t('rates.toMats')}
             </a>
           </div>
           <div className="why-panel" id="about">
@@ -313,10 +335,10 @@ export function HomePage() {
                   </span>
                 </a>
                 <div className="mini-cats">
-                  <span>Metal</span>
-                  <span>Electronics</span>
-                  <span>Paper</span>
-                  <span>Plastic</span>
+                  <a href="#materials">Metal</a>
+                  <a href="#materials">Electronics</a>
+                  <a href="#materials">Paper</a>
+                  <a href="#materials">Plastic</a>
                 </div>
                 <div className="mini-card">
                   <small>#c4e2a91b · Waiting</small>
@@ -346,6 +368,19 @@ export function HomePage() {
               </details>
             ))}
           </div>
+          <p className="section-more reveal">
+            <a className="text-link" href="#download">
+              {t('faq.toApp')}
+            </a>
+            {' · '}
+            <a className="text-link" href="/privacy">
+              {t('sec.privacy')}
+            </a>
+            {' · '}
+            <a className="text-link" href="/terms">
+              {t('sec.terms')}
+            </a>
+          </p>
         </div>
       </section>
 
