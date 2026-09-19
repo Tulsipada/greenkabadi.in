@@ -7,6 +7,7 @@ Marketing website matching the HTML mockup, built with **Vike** (Vite SSR) + Rea
 | Route | Content |
 |-------|---------|
 | `/` | Landing (hero, how it works, materials, rates, business, app, FAQ, contact) |
+| `/contact` | Contact page (email / phone / enquiry form) |
 | `/privacy` | Privacy Policy (Google Play / app store URL) |
 | `/terms` | Terms & Conditions (Google Play / app store URL) |
 | `/delete-account` | Account deletion instructions + web request (Play Store) |

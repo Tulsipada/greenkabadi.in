@@ -281,7 +281,7 @@ export function HomePage() {
             <span>🏠 Apartments</span>
             <span>🏭 Businesses</span>
           </div>
-          <a className="btn btn-primary" href="#contact">
+          <a className="btn btn-primary" href="/contact">
             <span>{t('biz.cta')}</span>
             <span aria-hidden="true">→</span>
           </a>
@@ -415,11 +415,18 @@ export function HomePage() {
             </div>
           </div>
           <p className="legal-links">
+            <a href="/contact">{t('nav.contact')}</a>
+            {' · '}
             <a href="/privacy">{t('sec.privacy')}</a>
             {' · '}
             <a href="/terms">{t('sec.terms')}</a>
             {' · '}
             <a href="/delete-account">{t('sec.delete')}</a>
+          </p>
+          <p className="section-more" style={{ marginTop: 12 }}>
+            <a className="text-link" href="/contact">
+              {t('contact.openPage')}
+            </a>
           </p>
         </div>
       </section>

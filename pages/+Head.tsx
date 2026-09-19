@@ -38,7 +38,9 @@ export function Head() {
         ? 'GreenकBadi Terms and Conditions'
         : urlPathname === '/delete-account'
           ? 'GreenकBadi account deletion'
-          : 'GreenकBadi doorstep scrap pickup in Siliguri'
+          : urlPathname === '/contact'
+            ? 'Contact GreenकBadi scrap pickup Siliguri'
+            : 'GreenकBadi doorstep scrap pickup in Siliguri'
 
   const breadcrumbs =
     urlPathname === '/privacy'
@@ -56,7 +58,12 @@ export function Head() {
               { name: 'Home', path: '/' },
               { name: 'Delete Account', path: '/delete-account' },
             ])
-          : null
+          : urlPathname === '/contact'
+            ? breadcrumbJsonLd([
+                { name: 'Home', path: '/' },
+                { name: 'Contact', path: '/contact' },
+              ])
+            : null
 
   return (
     <>

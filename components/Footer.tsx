@@ -8,6 +8,7 @@ export function Footer() {
   const onPrivacy = urlPathname === '/privacy'
   const onTerms = urlPathname === '/terms'
   const onDelete = urlPathname === '/delete-account'
+  const onContact = urlPathname === '/contact'
 
   return (
     <footer className="site-footer">
@@ -33,7 +34,7 @@ export function Footer() {
             <a href="/#business">{t('nav.business')}</a>
             <a href="/#download">{t('nav.download')}</a>
             <a href="/#faq">{t('nav.faq')}</a>
-            <a href="/#contact">{t('nav.contact')}</a>
+            {!onContact ? <a href="/contact">{t('nav.contact')}</a> : null}
           </nav>
           <div className="social" aria-label="Social">
             <a href="#" aria-label="Facebook">

@@ -1254,8 +1254,51 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 /* Related internal links (legal pages) */
-.related-links {
-  margin-top: 36px;
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--lp-line);
+  font: inherit;
+  font-size: 15px;
+  color: var(--lp-ink);
+  background: #fff;
+  resize: vertical;
+}
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: 2px solid rgba(15, 61, 46, 0.25);
+  border-color: var(--lp-forest);
+}
+.contact-form .btn-primary {
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+}
+.contact-form-title {
+  margin: 28px 0 12px !important;
+  font-size: 1.05rem !important;
+}
+.contact-row-page {
+  margin: 8px 0 8px;
+}
+.contact-page .legal-card h1 {
+  margin-top: 4px;
+}
+.contact-page-legal {
+  margin-top: 8px;
+}
+.contact-page .section-kicker {
+  margin-bottom: 4px;
+}
+@media (max-width: 640px) {
+  .contact-form .btn-primary {
+    width: 100%;
+  }
+}
+
   padding-top: 24px;
   border-top: 1px solid var(--lp-line);
 }
