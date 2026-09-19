@@ -185,7 +185,3 @@ export function Page() {
     </main>
   )
 }
-
-export const title = 'Privacy Policy - GreenकBadi'
-export const description =
-  'Privacy Policy for the GreenकBadi Android app and website - data collection, permissions, sharing and your rights.'

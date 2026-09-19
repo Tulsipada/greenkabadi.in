@@ -172,7 +172,3 @@ export function Page() {
     </main>
   )
 }
-
-export const title = 'Terms & Conditions - GreenकBadi'
-export const description =
-  'Terms and Conditions for the GreenकBadi Android app and website - use of service, payments, liability and your responsibilities.'

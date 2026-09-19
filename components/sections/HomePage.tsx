@@ -47,6 +47,9 @@ export function HomePage() {
 
   return (
     <main id="top">
+      <a className="skip-link" href="#home">
+        Skip to content
+      </a>
       <section className="hero" id="home">
         <div className="hero-bg" aria-hidden="true" />
         <div className="container hero-grid">
@@ -102,6 +105,8 @@ export function HomePage() {
                 alt="GreenकBadi doorstep scrap pickup - recycle today, better tomorrow"
                 width={1200}
                 height={800}
+                fetchPriority="high"
+                decoding="async"
               />
             </figure>
           </div>
@@ -178,7 +183,14 @@ export function HomePage() {
                 className={`mat-card reveal${i ? ` delay-${i}` : ''}`}
               >
                 <div className="mat-img">
-                  <img src={m.src} alt={m.alt} loading="lazy" />
+                  <img
+                    src={m.src}
+                    alt={m.alt}
+                    width={640}
+                    height={420}
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
                 <div className="mat-body">
                   <h3>{t(m.title)}</h3>
@@ -229,8 +241,14 @@ export function HomePage() {
       </section>
 
       <section id="business" className="section business">
-        <div className="business-media" aria-hidden="true">
-          <img src="/img/website/business.jpg" alt="" />
+        <div className="business-media">
+          <img
+            src="/img/website/business.jpg"
+            alt="Institutional scrap pickup for businesses and healthcare in Siliguri"
+            width={1200}
+            height={800}
+            loading="lazy"
+          />
         </div>
         <div className="container business-content reveal">
           <span className="biz-kicker">{t('biz.kicker')}</span>

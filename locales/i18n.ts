@@ -2,8 +2,8 @@ export type Lang = 'en' | 'hi' | 'bn' | 'ne';
 
 export const DICT: Record<Lang, Record<string, string>> = {
   en: {
-    "meta.title": "GreenकBadi - Scrap pickup at your door",
-    "meta.desc": "Doorstep scrap pickup in Siliguri. Fair rates, verified weight, digital receipts.",
+    "meta.title": "GreenकBadi - Doorstep Scrap Pickup in Siliguri",
+    "meta.desc": "Sell scrap with doorstep pickup in Siliguri. Fair rates for metal, electronics, paper and plastic. Verified weight, digital receipt, cash or UPI.",
     "nav.home": "Home",
     "nav.materials": "Materials",
     "nav.book": "Book a Pickup",

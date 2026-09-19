@@ -16,7 +16,7 @@ export function Header({ compact }: { compact?: boolean }) {
     <header className="site-header">
       <div className="container inner">
         <a className="brand" href={compact ? '/' : '#top'} onClick={close}>
-          <img src="/img/logo-mark.png" alt="" width={44} height={44} />
+          <img src="/img/logo-mark.png" alt="GreenकBadi" width={44} height={44} />
           <span className="brand-text">
             <span className="brand-name">
               <span className="g">Green</span>

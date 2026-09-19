@@ -18,6 +18,21 @@ html {
   scroll-padding-top: 88px; /* sticky header offset for #anchors */
 }
 
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 10000;
+  padding: 12px 16px;
+  background: var(--lp-forest);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 0 0 8px 0;
+}
+.skip-link:focus {
+  left: 0;
+}
+
 #how,
 #materials,
 #rates,

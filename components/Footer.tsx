@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container">
         <div className="footer-top">
           <a className="brand footer-brand" href="/#top">
-            <img src="/img/logo-mark.png" alt="" width={40} height={40} />
+            <img src="/img/logo-mark.png" alt="GreenकBadi" width={40} height={40} />
             <span className="brand-text">
               <span className="brand-name brand-name-light">
                 <span className="g">Green</span>

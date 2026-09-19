@@ -19,7 +19,9 @@ export default function LayoutDefault({ children }: { children: React.ReactNode 
           rel="stylesheet"
         />
         <link rel="stylesheet" href="/styles/website.css" />
-        <link rel="icon" href="/img/logo-mark.png" />
+        <meta name="format-detection" content="telephone=yes" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
       </Head>
       <Header compact={compact} />
       {children}
