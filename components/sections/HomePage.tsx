@@ -1,5 +1,6 @@
 import React from 'react'
 import { useI18n } from '../../locales/I18nContext'
+import { SITE } from '../../seo/site'
 import { useReveal } from '../useReveal'
 
 const RATES = [
@@ -491,11 +492,11 @@ export function HomePage() {
                 hello@greenkabadi.in
               </span>
             </a>
-            <a className="contact-pill" href="tel:+919800000000">
+            <a className="contact-pill" href={`tel:${SITE.phone}`}>
               <span className="ico">📞</span>
               <span>
                 <strong>{t('contact.phone')}</strong>
-                +91 98000 00000
+                {SITE.phoneDisplay}
               </span>
             </a>
             <div className="contact-pill">

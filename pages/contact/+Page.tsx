@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useI18n } from '../../locales/I18nContext'
 import { RelatedLinks } from '../../components/RelatedLinks'
+import { SITE } from '../../seo/site'
 
 export function Page() {
   const { t } = useI18n()
@@ -55,13 +56,13 @@ export function Page() {
               hello@greenkabadi.in
             </span>
           </a>
-          <a className="contact-pill" href="tel:+919800000000">
+          <a className="contact-pill" href={`tel:${SITE.phone}`}>
             <span className="ico" aria-hidden="true">
               📞
             </span>
             <span>
               <strong>{t('contact.phone')}</strong>
-              +91 98000 00000
+              {SITE.phoneDisplay}
             </span>
           </a>
           <div className="contact-pill">
