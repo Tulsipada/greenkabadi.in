@@ -3,13 +3,15 @@ import React from 'react'
 type LinkItem = { href: string; label: string }
 
 const HOME_LINKS: LinkItem[] = [
+  { href: '/how-it-works', label: 'How it works' },
+  { href: '/materials', label: 'Materials we collect' },
+  { href: '/rates', label: "Today's scrap rates" },
+  { href: '/business', label: 'Business pickups' },
+  { href: '/about', label: 'About GreenकBadi' },
+  { href: '/areas', label: 'Service areas' },
+  { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact us' },
-  { href: '/#how', label: 'How it works' },
-  { href: '/#materials', label: 'Materials we collect' },
-  { href: '/#rates', label: "Today's scrap rates" },
-  { href: '/#business', label: 'Business pickups' },
   { href: '/#download', label: 'Download the app' },
-  { href: '/#faq', label: 'FAQ' },
 ]
 
 const LEGAL_LINKS: LinkItem[] = [
@@ -18,7 +20,7 @@ const LEGAL_LINKS: LinkItem[] = [
   { href: '/delete-account', label: 'Delete account' },
 ]
 
-/** Related internal links for legal/contact pages - skips the current path. */
+/** Related internal links for legal/contact/SEO pages - skips the current path. */
 export function RelatedLinks({ currentPath }: { currentPath: string }) {
   const home = HOME_LINKS.filter((l) => l.href !== currentPath)
   const legal = LEGAL_LINKS.filter((l) => l.href !== currentPath)

@@ -15,6 +15,53 @@ type PageMeta = {
   description?: string
 }
 
+const PAGE_META: Record<string, { crumb: string; ogAlt: string }> = {
+  '/privacy': {
+    crumb: 'Privacy Policy',
+    ogAlt: 'GreenकBadi Privacy Policy',
+  },
+  '/terms': {
+    crumb: 'Terms & Conditions',
+    ogAlt: 'GreenकBadi Terms and Conditions',
+  },
+  '/delete-account': {
+    crumb: 'Delete Account',
+    ogAlt: 'GreenकBadi account deletion',
+  },
+  '/contact': {
+    crumb: 'Contact',
+    ogAlt: 'Contact GreenकBadi scrap pickup Siliguri',
+  },
+  '/rates': {
+    crumb: 'Scrap Rates',
+    ogAlt: 'GreenकBadi scrap rates Siliguri',
+  },
+  '/faq': {
+    crumb: 'FAQ',
+    ogAlt: 'GreenकBadi scrap pickup FAQ',
+  },
+  '/how-it-works': {
+    crumb: 'How It Works',
+    ogAlt: 'How GreenकBadi scrap pickup works',
+  },
+  '/about': {
+    crumb: 'About',
+    ogAlt: 'About GreenकBadi Siliguri',
+  },
+  '/areas': {
+    crumb: 'Service Areas',
+    ogAlt: 'GreenकBadi scrap pickup areas Siliguri',
+  },
+  '/business': {
+    crumb: 'For Businesses',
+    ogAlt: 'GreenकBadi business scrap pickup Siliguri',
+  },
+  '/materials': {
+    crumb: 'Materials',
+    ogAlt: 'Materials GreenकBadi collects',
+  },
+}
+
 /** Global head tags for crawlers (SEO + social). Cumulative with layout Head. */
 export function Head() {
   const pageContext = usePageContext() as ReturnType<typeof usePageContext> &
@@ -23,6 +70,7 @@ export function Head() {
   const canonical = canonicalPath(urlPathname)
   const ogImage = absoluteUrl(SITE.ogImagePath)
   const isHome = urlPathname === '/'
+  const pageMeta = PAGE_META[urlPathname]
 
   const title =
     (typeof pageContext.title === 'string' && pageContext.title) ||
@@ -32,38 +80,14 @@ export function Head() {
     SITE.defaultDescription
 
   const ogAlt =
-    urlPathname === '/privacy'
-      ? 'GreenकBadi Privacy Policy'
-      : urlPathname === '/terms'
-        ? 'GreenकBadi Terms and Conditions'
-        : urlPathname === '/delete-account'
-          ? 'GreenकBadi account deletion'
-          : urlPathname === '/contact'
-            ? 'Contact GreenकBadi scrap pickup Siliguri'
-            : 'GreenकBadi doorstep scrap pickup in Siliguri'
+    pageMeta?.ogAlt ?? 'GreenकBadi doorstep scrap pickup in Siliguri'
 
-  const breadcrumbs =
-    urlPathname === '/privacy'
-      ? breadcrumbJsonLd([
-          { name: 'Home', path: '/' },
-          { name: 'Privacy Policy', path: '/privacy' },
-        ])
-      : urlPathname === '/terms'
-        ? breadcrumbJsonLd([
-            { name: 'Home', path: '/' },
-            { name: 'Terms & Conditions', path: '/terms' },
-          ])
-        : urlPathname === '/delete-account'
-          ? breadcrumbJsonLd([
-              { name: 'Home', path: '/' },
-              { name: 'Delete Account', path: '/delete-account' },
-            ])
-          : urlPathname === '/contact'
-            ? breadcrumbJsonLd([
-                { name: 'Home', path: '/' },
-                { name: 'Contact', path: '/contact' },
-              ])
-            : null
+  const breadcrumbs = pageMeta
+    ? breadcrumbJsonLd([
+        { name: 'Home', path: '/' },
+        { name: pageMeta.crumb, path: urlPathname },
+      ])
+    : null
 
   return (
     <>

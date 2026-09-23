@@ -1395,6 +1395,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   }
 }
 
+.related-links {
+  margin-top: 32px;
   padding-top: 24px;
   border-top: 1px solid var(--lp-line);
 }
@@ -1435,6 +1437,90 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .related-links-list a:hover {
   background: var(--lp-mint);
   border-color: rgba(15, 61, 46, 0.2);
+}
+
+/* -- SEO marketing pages -- */
+.seo-card {
+  max-width: 900px;
+}
+.seo-card .section-kicker {
+  margin-bottom: 6px;
+}
+.seo-rate-list {
+  margin: 8px 0 16px;
+  padding: 0;
+  list-style: none;
+}
+.seo-note {
+  font-size: 13px !important;
+  color: var(--lp-soft) !important;
+}
+.seo-faq-grid {
+  margin: 8px 0 20px;
+}
+.seo-how-steps {
+  margin: 12px 0 24px;
+}
+.seo-why-list {
+  margin: 8px 0 24px;
+  padding: 0;
+  list-style: none;
+}
+.seo-area-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 8px 16px;
+  margin: 12px 0 20px;
+  padding: 0;
+  list-style: none;
+}
+.seo-area-list li {
+  margin: 0 !important;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--lp-line);
+  background: #f7fbf8;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--lp-forest);
+}
+.seo-biz-segments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 24px;
+}
+.seo-biz-segments span {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--lp-line);
+  background: #f7fbf8;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--lp-forest);
+}
+.seo-feature-list {
+  margin: 8px 0 20px;
+  padding: 0;
+  list-style: none;
+}
+.seo-feature-list li {
+  margin: 0 0 16px !important;
+  padding: 0;
+}
+.seo-feature-list strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--lp-forest);
+}
+.seo-mat-grid {
+  margin: 12px 0 24px;
+}
+.seo-page .section-more {
+  margin-top: 8px;
+}
+.seo-page .seo-card h2 {
+  margin-top: 28px;
 }
 
 @media (max-width: 640px) {

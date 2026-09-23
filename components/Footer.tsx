@@ -28,12 +28,13 @@ export function Footer() {
             </span>
           </a>
           <nav className="footer-nav" aria-label="Footer">
-            <a href="/#how">{t('nav.how')}</a>
-            <a href="/#materials">{t('nav.materials')}</a>
-            <a href="/#rates">{t('nav.rates')}</a>
-            <a href="/#business">{t('nav.business')}</a>
+            <a href="/how-it-works">{t('nav.how')}</a>
+            <a href="/materials">{t('nav.materials')}</a>
+            <a href="/rates">{t('nav.rates')}</a>
+            <a href="/business">{t('nav.business')}</a>
+            <a href="/areas">{t('nav.areas')}</a>
             <a href="/#download">{t('nav.download')}</a>
-            <a href="/#faq">{t('nav.faq')}</a>
+            <a href="/faq">{t('nav.faq')}</a>
             {!onContact ? <a href="/contact">{t('nav.contact')}</a> : null}
           </nav>
           <div className="social" aria-label="Social">
