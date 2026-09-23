@@ -41,6 +41,42 @@ const MATERIALS = [
   },
 ]
 
+const IMPACT = [
+  {
+    value: '4',
+    label: 'impact.cats',
+    path: 'M17 8C8 10 5.9 16.2 3.8 19.5l2.4.8C8.8 16 11 12.5 17 11.2V8zm-5-6C7.6 2 4 5.6 4 10c0 1.9.7 3.6 1.8 5l1.5-1.3A5.9 5.9 0 0 1 6 10c0-3.3 2.7-6 6-6s6 2.7 6 6c0 .9-.2 1.8-.6 2.6l1.7 1A7.9 7.9 0 0 0 20 10c0-4.4-3.6-8-8-8z',
+  },
+  {
+    value: '100%',
+    label: 'impact.digital',
+    path: 'M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 15.6-4.2-4.2 1.4-1.4L11 13.8l5.6-5.6 1.4 1.4L11 16.6z',
+  },
+  {
+    value: '4',
+    label: 'impact.lang',
+    path: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm7.9 9h-3.1a15.4 15.4 0 0 0-1.3-5.4A8.03 8.03 0 0 1 19.9 11zM12 4c.9 0 2.4 2.3 3.1 6H8.9C9.6 6.3 11.1 4 12 4zM4.1 13h3.1c.2 1.9.7 3.7 1.3 5.4A8.03 8.03 0 0 1 4.1 13zm3.1-2H4.1a8.03 8.03 0 0 1 4.4-5.4A15.4 15.4 0 0 0 7.2 11zM12 20c-.9 0-2.4-2.3-3.1-6h6.2c-.7 3.7-2.2 6-3.1 6zm3.5-1.6c.6-1.7 1.1-3.5 1.3-5.4h3.1a8.03 8.03 0 0 1-4.4 5.4z',
+  },
+  {
+    value: '4.8★',
+    label: 'impact.rating',
+    path: 'M12 17.3 18.2 21l-1.6-7.1L22 9.2l-7.2-.6L12 2 9.2 8.6 2 9.2l5.4 4.7L5.8 21z',
+  },
+]
+
+const HOW_ICONS = [
+  'M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V10h14v10z',
+  'M20 8h-3V4H3v13h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h1V8zM8 18.5A1.5 1.5 0 1 1 8 15a1.5 1.5 0 0 1 0 3.5zm10 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM17 8h2.5l1.5 3H17V8z',
+  'M12 3a2 2 0 0 0-2 2c0 .37.1.71.28 1L5.15 9.4A2.1 2.1 0 0 0 4.3 11c0 1.16.94 2.1 2.1 2.1h.25L12 21l5.35-7.9h.25c1.16 0 2.1-.94 2.1-2.1 0-.62-.28-1.2-.75-1.6L13.72 6c.18-.29.28-.63.28-1a2 2 0 0 0-2-2zm-3.2 8.6h6.4L12 16.9 8.8 11.6z',
+  'M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z',
+]
+
+const WHY_ICONS = [
+  'M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 15.6-4.2-4.2 1.4-1.4L11 13.8l5.6-5.6 1.4 1.4L11 16.6z',
+  'M13.5 3H8v2h5.5c1.4 0 2.5 1.1 2.5 2.5S14.9 10 13.5 10H11v2h2.5c2.5 0 4.5-2 4.5-4.5S16 3 13.5 3zM11 14H8v2h3c1.1 0 2 .9 2 2s-.9 2-2 2H8v2h3c2.2 0 4-1.8 4-4s-1.8-4-4-4zM7 3H5v18h2V3z',
+  'M17 8C8 10 5.9 16.2 3.8 19.5l2.4.8C8.8 16 11 12.5 17 11.2V8zM12 2C7.6 2 4 5.6 4 10c0 1.9.7 3.6 1.8 5l1.5-1.3A5.9 5.9 0 0 1 6 10c0-3.3 2.7-6 6-6s6 2.7 6 6c0 .9-.2 1.8-.6 2.6l1.7 1A7.9 7.9 0 0 0 20 10c0-4.4-3.6-8-8-8z',
+]
+
 export function HomePage() {
   const { t } = useI18n()
   useReveal()
@@ -112,30 +148,22 @@ export function HomePage() {
 
       <section className="impact" aria-label="Impact">
         <div className="container impact-row">
-          <div className="impact-item reveal">
-            <div>
-              <strong>4</strong>
-              <span>{t('impact.cats')}</span>
+          {IMPACT.map((item, i) => (
+            <div
+              key={item.label}
+              className={`impact-item reveal${i ? ` delay-${i}` : ''}`}
+            >
+              <span className="impact-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22">
+                  <path fill="currentColor" d={item.path} />
+                </svg>
+              </span>
+              <div>
+                <strong>{item.value}</strong>
+                <span>{t(item.label)}</span>
+              </div>
             </div>
-          </div>
-          <div className="impact-item reveal delay-1">
-            <div>
-              <strong>100%</strong>
-              <span>{t('impact.digital')}</span>
-            </div>
-          </div>
-          <div className="impact-item reveal delay-2">
-            <div>
-              <strong>4</strong>
-              <span>{t('impact.lang')}</span>
-            </div>
-          </div>
-          <div className="impact-item reveal delay-3">
-            <div>
-              <strong>4.8★</strong>
-              <span>{t('impact.rating')}</span>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
@@ -157,6 +185,11 @@ export function HomePage() {
                 <li className="how-step">
                   <span className="how-num" aria-hidden="true">
                     {n}
+                  </span>
+                  <span className="how-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28">
+                      <path fill="currentColor" d={HOW_ICONS[i]} />
+                    </svg>
                   </span>
                   <h3>{t(`how.s${n}.title`)}</h3>
                   <p>{t(`how.s${n}.desc`)}</p>
@@ -247,6 +280,11 @@ export function HomePage() {
               <ul className="why-list">
                 {[1, 2, 3].map((n) => (
                   <li key={n}>
+                    <span className="why-ico" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d={WHY_ICONS[n - 1]} />
+                      </svg>
+                    </span>
                     <div>
                       <h3>{t(`why.t${n}`)}</h3>
                       <p>{t(`why.d${n}`)}</p>
@@ -300,12 +338,24 @@ export function HomePage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <svg className="play-ico" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="#34A853"
+                    d="M3 20.5V3.5c0-.8.5-1.2 1.1-.9l14.6 8.4c.6.4.6 1 0 1.3L4.1 21.4c-.6.3-1.1-.1-1.1-.9z"
+                  />
+                </svg>
                 <span className="lines">
                   <small>{t('download.soon')}</small>
                   <strong>{t('download.play')}</strong>
                 </span>
               </a>
               <a className="store-badge store-apple" href="#download" aria-disabled="true">
+                <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+                  <path
+                    fill="#fff"
+                    d="M16.4 12.6c0-2.1 1.7-3.1 1.8-3.2-1-1.4-2.5-1.6-3-1.6-1.3-.1-2.5.8-3.1.8-.7 0-1.7-.7-2.8-.7-1.4 0-2.8.9-3.5 2.2-1.5 2.6-.4 6.4 1.1 8.5.7 1 1.6 2.1 2.7 2.1 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1 2.6-2 .8-1.2 1.1-2.3 1.1-2.4-.02-.01-2.2-.8-2.2-3.4zM14.3 6.3c.6-.7 1-1.7.9-2.7-1 .1-2.1.6-2.8 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.9-1.4z"
+                  />
+                </svg>
                 <span className="lines">
                   <small>{t('download.appleSoon')}</small>
                   <strong>{t('download.apple')}</strong>
@@ -323,27 +373,69 @@ export function HomePage() {
                       <span className="g">Green</span>
                       <span className="ka">क</span>Badi
                     </strong>
-                    <small>Hello, Rina</small>
+                    <small>{t('hero.mockHello')}</small>
                   </div>
                 </header>
+
+                <div className="mini-addr">
+                  <span className="mini-addr-pin" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11z" />
+                      <circle cx="12" cy="10" r="2.5" />
+                    </svg>
+                  </span>
+                  <span className="mini-addr-copy">
+                    <small>{t('hero.mockAddrLabel')}</small>
+                    <strong>Salt Lake, 700091</strong>
+                  </span>
+                </div>
+
                 <a className="mini-post" href="#download">
                   <span className="mini-post-go" aria-hidden="true">
-                    +
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                      <path d="M12 5v14M5 12h14" />
+                    </svg>
                   </span>
                   <span className="mini-post-copy">
-                    <strong>What do you want to sell today?</strong>
+                    <strong>{t('hero.mockPost')}</strong>
                   </span>
                 </a>
-                <div className="mini-cats">
-                  <a href="#materials">Metal</a>
-                  <a href="#materials">Electronics</a>
-                  <a href="#materials">Paper</a>
-                  <a href="#materials">Plastic</a>
+
+                <div className="mini-cat-scroll">
+                  <a className="mini-cat" href="#materials">
+                    <span className="mini-cat-ico">
+                      <img src="/img/website/plastic.jpg" alt="" />
+                    </span>
+                    <strong>Plastic</strong>
+                  </a>
+                  <a className="mini-cat" href="#materials">
+                    <span className="mini-cat-ico">
+                      <img src="/img/website/paper.jpg" alt="" />
+                    </span>
+                    <strong>Paper</strong>
+                  </a>
+                  <a className="mini-cat" href="#materials">
+                    <span className="mini-cat-ico">
+                      <img src="/img/website/metal.jpg" alt="" />
+                    </span>
+                    <strong>Metal</strong>
+                  </a>
+                  <a className="mini-cat" href="#materials">
+                    <span className="mini-cat-ico">
+                      <img src="/img/website/electronics.jpg" alt="" />
+                    </span>
+                    <strong>E-waste</strong>
+                  </a>
                 </div>
+
+                <p className="mini-section">{t('hero.mockRecent')}</p>
                 <div className="mini-card">
-                  <small>#c4e2a91b · Waiting</small>
-                  <strong>Old fridge</strong>
-                  <p>Electronics · Salt Lake</p>
+                  <div className="mini-card-row">
+                    <span className="mini-oid">#c4e2a91b</span>
+                    <span className="mini-chip waiting">{t('hero.job2.status')}</span>
+                  </div>
+                  <strong>{t('hero.job1.title')}</strong>
+                  <p>Electronics · ~40 kg · Salt Lake</p>
                 </div>
               </div>
             </div>

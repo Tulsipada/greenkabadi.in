@@ -11,7 +11,7 @@ export const SITE = {
   tagline: 'Recycle Today. Better Tomorrow.',
   defaultTitle: 'GreenकBadi - Doorstep Scrap Pickup in Siliguri',
   defaultDescription:
-    'Sell scrap with doorstep pickup in Siliguri. Fair rates for metal, electronics, paper and plastic. Verified weight, digital receipt, cash or UPI.',
+    "Sell your scrap. We'll pick it up from your doorstep in Siliguri. Transparent rates, verified weight and instant digital receipts.",
   keywords:
     'scrap pickup Siliguri, sell scrap, kabadi, e-waste collection, metal scrap rates, paper scrap, plastic recycling, GreenKabadi, doorstep scrap pickup',
   ogImagePath: '/img/og-default.jpg',

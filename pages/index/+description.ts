@@ -1,4 +1,4 @@
 export { description }
 
 const description =
-  'Sell scrap with doorstep pickup in Siliguri. Fair rates for metal, electronics, paper and plastic. Verified weight, digital receipt, cash or UPI.'
+  "Sell your scrap. We'll pick it up from your doorstep in Siliguri. Transparent rates, verified weight and instant digital receipts."
