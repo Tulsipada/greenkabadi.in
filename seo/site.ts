@@ -73,6 +73,11 @@ export function organizationJsonLd() {
       areaServed: 'IN',
       availableLanguage: ['en', 'hi', 'bn', 'ne'],
     },
+    founder: {
+      '@type': 'Person',
+      name: 'Ram Bhattarai',
+      jobTitle: 'Founder',
+    },
   }
 }
 

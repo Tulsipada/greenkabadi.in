@@ -36,7 +36,9 @@ export function Page() {
 
       <h2>{t('about.f1.title')}</h2>
       <p>
-        <strong>{t('about.f1.role')}</strong>
+        <strong>{t('about.f1.name')}</strong>
+        <br />
+        <span style={{ color: 'var(--lp-soft)' }}>{t('about.f1.role')}</span>
       </p>
       <p>{t('about.f1.desc')}</p>
 
