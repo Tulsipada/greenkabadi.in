@@ -35,22 +35,22 @@ export function Header({ compact }: { compact?: boolean }) {
             id="siteNav"
             aria-label="Main"
           >
-            <a href="#top" onClick={close}>
+            <a href="/" onClick={close}>
               {t('nav.home')}
             </a>
-            <a href="#how" onClick={close}>
+            <a href="/how-it-works" onClick={close}>
               {t('nav.how')}
             </a>
-            <a href="#materials" onClick={close}>
+            <a href="/materials" onClick={close}>
               {t('nav.materials')}
             </a>
-            <a href="#rates" onClick={close}>
+            <a href="/rates" onClick={close}>
               {t('nav.rates')}
             </a>
-            <a href="#business" onClick={close}>
+            <a href="/business" onClick={close}>
               {t('nav.business')}
             </a>
-            <a href="#about" onClick={close}>
+            <a href="/about" onClick={close}>
               {t('nav.about')}
             </a>
           </nav>
