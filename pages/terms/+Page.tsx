@@ -164,7 +164,7 @@ export function Page() {
 
         <h2>14. Contact · संपर्क</h2>
         <p>
-          <a href="mailto:hello@greenkabadi.in">hello@greenkabadi.in</a>
+          <a href="mailto:support@greenkabadi.in">support@greenkabadi.in</a>
           <br />
           Milanmore, Maheshmari, Champasari, Siliguri, West Bengal, India
           <br />

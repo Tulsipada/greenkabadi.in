@@ -448,11 +448,11 @@ export function HomePage() {
             <p>{t('contact.desc')}</p>
           </div>
           <div className="contact-row">
-            <a className="contact-pill" href="mailto:hello@greenkabadi.in">
+            <a className="contact-pill" href="mailto:support@greenkabadi.in">
               <span className="ico">📧</span>
               <span>
                 <strong>{t('contact.email')}</strong>
-                hello@greenkabadi.in
+                support@greenkabadi.in
               </span>
             </a>
             <a className="contact-pill" href={`tel:${SITE.phone}`}>

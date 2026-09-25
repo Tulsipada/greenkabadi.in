@@ -33,7 +33,7 @@ export function Page() {
         'Please delete my profile and personal data as described on https://greenkabadi.in/delete-account',
       ].join('\n'),
     )
-    window.location.href = `mailto:hello@greenkabadi.in?subject=${subject}&body=${body}`
+    window.location.href = `mailto:support@greenkabadi.in?subject=${subject}&body=${body}`
     setSent(true)
   }
 
@@ -84,7 +84,7 @@ export function Page() {
             <p>
               Send the email from your mail app to complete the request. If
               nothing opened, write to{' '}
-              <a href="mailto:hello@greenkabadi.in">hello@greenkabadi.in</a>{' '}
+              <a href="mailto:support@greenkabadi.in">support@greenkabadi.in</a>{' '}
               with subject &quot;Account deletion request&quot;.
             </p>
           </div>
@@ -174,7 +174,7 @@ export function Page() {
 
         <h2>5. Contact</h2>
         <p>
-          <a href="mailto:hello@greenkabadi.in">hello@greenkabadi.in</a>
+          <a href="mailto:support@greenkabadi.in">support@greenkabadi.in</a>
           <br />
           See also our <a href="/privacy">Privacy Policy</a>.
         </p>

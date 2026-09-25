@@ -35,7 +35,7 @@ export function Page() {
         message.trim(),
       ].join('\n'),
     )
-    window.location.href = `mailto:hello@greenkabadi.in?subject=${subject}&body=${body}`
+    window.location.href = `mailto:support@greenkabadi.in?subject=${subject}&body=${body}`
     setSent(true)
   }
 
@@ -47,13 +47,13 @@ export function Page() {
         <p className="updated">{t('contact.desc')}</p>
 
         <div className="contact-row contact-row-page">
-          <a className="contact-pill" href="mailto:hello@greenkabadi.in">
+          <a className="contact-pill" href="mailto:support@greenkabadi.in">
             <span className="ico" aria-hidden="true">
               📧
             </span>
             <span>
               <strong>{t('contact.email')}</strong>
-              hello@greenkabadi.in
+              support@greenkabadi.in
             </span>
           </a>
           <a className="contact-pill" href={`tel:${SITE.phone}`}>
@@ -83,7 +83,7 @@ export function Page() {
             <strong>{t('contact.ok')}</strong>
             <p>
               {t('contact.okHint')}{' '}
-              <a href="mailto:hello@greenkabadi.in">hello@greenkabadi.in</a>
+              <a href="mailto:support@greenkabadi.in">support@greenkabadi.in</a>
             </p>
           </div>
         ) : (

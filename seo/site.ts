@@ -3,7 +3,7 @@ export const SITE = {
   name: 'GreenकBadi',
   nameAscii: 'GreenKabadi',
   origin: 'https://greenkabadi.in',
-  email: 'hello@greenkabadi.in',
+  email: 'support@greenkabadi.in',
   phone: '+919774752633',
   phoneDisplay: '+91 97747 52633',
   locale: 'en_IN',
