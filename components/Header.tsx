@@ -82,11 +82,7 @@ export function Header({ compact }: { compact?: boolean }) {
               ))}
             </select>
           </label>
-          {compact ? (
-            <a className="btn btn-ghost btn-sm" href="/">
-              ← Back to website
-            </a>
-          ) : (
+          {!compact && (
             <>
               <a className="btn btn-primary btn-sm header-cta" href="#download">
                 <span>{t('nav.book')}</span>
