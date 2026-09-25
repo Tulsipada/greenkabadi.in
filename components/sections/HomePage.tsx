@@ -346,7 +346,7 @@ export function HomePage() {
                   </span>
                   <span className="mini-addr-copy">
                     <small>{t('hero.mockAddrLabel')}</small>
-                    <strong>Salt Lake, 700091</strong>
+                    <strong>Siliguri, 734003</strong>
                   </span>
                 </div>
 
@@ -395,7 +395,7 @@ export function HomePage() {
                     <span className="mini-chip waiting">{t('hero.job2.status')}</span>
                   </div>
                   <strong>{t('hero.job1.title')}</strong>
-                  <p>Electronics · ~40 kg · Salt Lake</p>
+                  <p>Electronics · ~40 kg · Siliguri</p>
                 </div>
               </div>
             </div>

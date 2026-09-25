@@ -7,7 +7,7 @@ import { Footer } from '../components/Footer'
 
 export default function LayoutDefault({ children }: { children: React.ReactNode }) {
   const pageContext = usePageContext()
-  const compact = pageContext.urlPathname !== '/'
+  const isHome = pageContext.urlPathname === '/'
 
   return (
     <I18nProvider>
@@ -23,7 +23,7 @@ export default function LayoutDefault({ children }: { children: React.ReactNode 
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
       </Head>
-      <Header compact={compact} />
+      <Header isHome={isHome} />
       {children}
       <Footer />
     </I18nProvider>
