@@ -1,4 +1,5 @@
 import React from 'react'
+import { SITE } from '../../seo/site'
 import { RelatedLinks } from '../../components/RelatedLinks'
 
 export function Page() {
@@ -164,7 +165,7 @@ export function Page() {
 
         <h2>14. Contact · संपर्क</h2>
         <p>
-          <a href="mailto:support@greenkabadi.in">support@greenkabadi.in</a>
+          <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
           <br />
           Milanmore, Maheshmari, Champasari, Siliguri, West Bengal, India
           <br />

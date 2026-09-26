@@ -1,5 +1,6 @@
 import React from 'react'
 import { RelatedLinks } from '../../components/RelatedLinks'
+import { SITE } from '../../seo/site'
 
 export function Page() {
   return (
@@ -30,7 +31,7 @@ export function Page() {
         <ul>
           <li>
             Email:{' '}
-            <a href="mailto:support@greenkabadi.in">support@greenkabadi.in</a>
+            <a href={`mailto:${SITE.supportEmail}`}>{SITE.supportEmail}</a>
           </li>
           <li>
             Address: Milanmore, Maheshmari, Champasari, Siliguri, West Bengal,
@@ -157,7 +158,7 @@ export function Page() {
             Request access or correction in the app, or{' '}
             <a href="/delete-account">delete your account</a> from the app or
             this website, or email{' '}
-            <a href="mailto:support@greenkabadi.in">support@greenkabadi.in</a>
+            <a href={`mailto:${SITE.supportEmail}`}>{SITE.supportEmail}</a>
           </li>
           <li>Opt out of non-essential notifications in device settings</li>
         </ul>
@@ -177,7 +178,7 @@ export function Page() {
         <h2>11. Contact · संपर्क</h2>
         <p>
           Privacy questions:{' '}
-          <a href="mailto:support@greenkabadi.in">support@greenkabadi.in</a>
+          <a href={`mailto:${SITE.supportEmail}`}>{SITE.supportEmail}</a>
           <br />
           Or use the{' '}
           <a href="/#contact">website contact form</a>.
